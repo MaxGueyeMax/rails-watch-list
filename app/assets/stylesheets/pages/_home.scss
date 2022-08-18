@@ -1,1 +1,10 @@
 // Specific CSS for your home-page
+.cards a {
+  text-decoration: none;
+  color: white;
+  font-size: 34px;
+}
+
+.cards a :hover {
+  text-decoration: none;
+}
