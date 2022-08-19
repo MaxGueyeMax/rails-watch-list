@@ -18,11 +18,11 @@ Movie.create!(title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tell
 Movie.create!(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0)
 
 puts "Creating lists..."
-horror = List.create!(name: "Horror", image_url: "https://t3.ftcdn.net/jpg/03/25/06/80/360_F_325068072_Ryr3QUrkqPL9btRL3cntBCypHVxYTqmk.jpg")
+horror = List.create!(name: "Horror")
 
-drama = List.create!(name: "Drama", image_url: "https://media.glamour.com/photos/5ec2e904af30542b4c66c451/master/w_3000,h_1621,c_limit/MCDLIWO_CO010.jpg")
+drama = List.create!(name: "Drama")
 
-comedy = List.create!(name: "Comedy", image_url: "https://presbee.com/blog/wp-content/uploads/2016/09/comedy.jpg")
+comedy = List.create!(name: "Comedy")
 
 puts "Creating bookmarks..."
 bookmark_1 = Bookmark.create!(
