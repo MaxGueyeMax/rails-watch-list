@@ -1,11 +1,13 @@
-<h1>List <%= @list.name %></h1>
 
-<p><strong>Movies</strong></p>
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @list.image_url %>);">
+<p><strong><%= @list.name %> Movies</strong></p>
+</div>
 <ul class="list-group">
   <% @list.movies.each do |movie| %>
     <li class="list-group-item"><%= movie.title %> | <%= movie.overview %> | <%= movie.rating %> <%= link_to "🗑", lists_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></li>
   <% end %>
 </ul>
 
- <%# <%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
- <%# <%= link_to "Go back to all restaurants", restaurants_path %>
+<%= link_to "Add a Bookmark", new_list_bookmark_path(@list, @bookmark) %>
