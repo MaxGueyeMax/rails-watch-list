@@ -1,7 +1,7 @@
 
 
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @list.image_url %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path @list.photo.key %>);">
 <p><strong><%= @list.name %> Movies</strong></p>
 </div>
 <ul class="list-group">

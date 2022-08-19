@@ -79,3 +79,5 @@ gem "pry-byebug"
 # .end
 gem "dotenv-rails", groups: [:development, :test]
 
+# Cloudinary
+gem "cloudinary"
