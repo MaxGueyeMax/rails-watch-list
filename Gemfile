@@ -75,3 +75,7 @@ end
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem "pry-byebug"
+
+# .end
+gem "dotenv-rails", groups: [:development, :test]
+
